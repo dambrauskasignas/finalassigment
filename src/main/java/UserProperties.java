@@ -1,8 +1,8 @@
 public enum UserProperties {
-      userName,
+    userName,
     password,
     firstName,
-   lastName,
+    lastName,
     personalNumber,
     dateOfBirth,
     email,
@@ -10,6 +10,5 @@ public enum UserProperties {
     gender,
     address,
     runningCourses,
-    role,
-    user_ID
+    role
 }

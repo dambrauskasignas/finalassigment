@@ -1,22 +1,22 @@
 public class User {
-    private String  userName;
-    private String  password;
-    private String  firstName;
-    private String  lastName;
-    private String  personalNumber;
-    private String  dateOfBirth;
-    private String  email;
-    private String  mobileNumber;
-    private String  gender;
-    private String  address;
-    private String  runningCourses;
-    private String  role;
-    private String  user_ID;
+    private String userName;
+    private String password;
+    private String firstName;
+    private String lastName;
+    private String personalNumber;
+    private String dateOfBirth;
+    private String email;
+    private String mobileNumber;
+    private String gender;
+    private String address;
+    private String runningCourses;
+    private String role;
+    private Integer user_ID;
 
-    public User(String userName, String firstName, String lastName, String personalNumber, String dateOfBirth, String email, String mobileNumber, String gender, String address, String runningCourses, String role, String user_id) {
+    public User() {
         this.userName = userName;
-        this.firstName = firstName;
         this.password = password;
+        this.firstName = firstName;
         this.lastName = lastName;
         this.personalNumber = personalNumber;
         this.dateOfBirth = dateOfBirth;
@@ -26,7 +26,7 @@ public class User {
         this.address = address;
         this.runningCourses = runningCourses;
         this.role = role;
-        this.user_ID = user_id;
+        this.user_ID = user_ID;
     }
 
     public String getUserName() {
@@ -117,11 +117,11 @@ public class User {
         this.role = role;
     }
 
-    public String getUser_ID() {
+    public Integer getUser_ID() {
         return user_ID;
     }
 
-    public void setUser_ID(String user_ID) {
+    public void setUser_ID(Integer user_ID) {
         this.user_ID = user_ID;
     }
 
@@ -132,4 +132,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
